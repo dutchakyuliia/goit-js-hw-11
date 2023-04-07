@@ -5,3 +5,34 @@
   padding: 20px 10px;
   background-color: rgb(40, 40, 158);
 }
+.load-more{
+  color: rgb(255, 255, 255);
+  background-color: rgb(47, 227, 47);
+  padding: 8px 10px;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+img {
+  width: 100%;
+  height: 160px;
+}
+.info-item {
+  text-align: center;
+}
+
+.load-more {
+  display: block;
+  margin: 8px auto;
+}
+
+.load-more.hidden {
+  display: none;
+}
