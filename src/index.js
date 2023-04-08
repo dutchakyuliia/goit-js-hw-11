@@ -91,7 +91,8 @@ async function handlerSubmitform(e) {
       lightbox.refresh();
 
       if (response.data.hits.length === 40) {
-        loadMore();
+        currentPage += 1;
+        loadMoreBtnEl.classList.remove('hidden');
       }
       
     } catch (error) {
@@ -133,7 +134,4 @@ function clearForm() {
   searchQuery = null;
   loadMoreBtnEl.classList.add('hidden');
 }
-function loadMore() {
-  currentPage += 1;
-  loadMoreBtnEl.classList.remove('hidden');
-}
+
